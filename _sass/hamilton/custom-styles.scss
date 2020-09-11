@@ -1,0 +1,47 @@
+a.author-link {
+  color: #111;
+}
+
+a.author-link:visited {
+  color: #111;
+}
+
+a.author-link:hover {
+  text-decoration: none;
+}
+
+a.all-posts,
+a.post-next,
+a.post-previous {
+  color: #111;
+}
+
+a.all-posts:visited,
+a.post-next:visited,
+a.post-previous:visited {
+  color: #111;
+}
+
+.post-previous {
+  margin-right: 50px;
+}
+
+.site-nav .current-page {
+  text-decoration: underline;
+}
+
+.post-list a {
+  color: #111;
+}
+
+.post-list a:visited {
+  color: #111;
+}
+
+.share-buttons {
+  margin-bottom: 30px;
+}
+
+.site-footer {
+  margin-top: 0px;
+}
