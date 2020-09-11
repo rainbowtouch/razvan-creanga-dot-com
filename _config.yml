@@ -4,7 +4,7 @@ avatar: /assets/img/Razvan_photo.jpeg
 description: >- # this means to ignore newlines until "baseurl:"
   Entrepreneur. Forbes 30 under 30. Passionate about high-impact initiatives with strong and meaningful missions.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://razvancreanga.com" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: UA-129795094-1
 paginate: 5
 paginate_path: "/blog/:num/"
