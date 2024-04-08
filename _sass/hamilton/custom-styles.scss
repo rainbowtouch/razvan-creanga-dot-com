@@ -90,3 +90,13 @@ h4, h5, h6 {
   margin-bottom: 10px;
   border: .2px solid #CCCCCC;
 }
+
+a.contact-info,
+a.social-icon {
+  color: #000000;
+}
+
+a.contact-info:hover,
+a.social-icon:hover {
+  color: #003be4;
+}
