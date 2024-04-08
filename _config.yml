@@ -2,7 +2,7 @@ title: Razvan Creanga
 author: Razvan Creanga
 avatar: /assets/img/Razvan_photo.jpeg
 description: >- # this means to ignore newlines until "baseurl:"
-  Entrepreneur. Forbes 30 under 30. Passionate about high-impact initiatives with strong and meaningful missions.
+  Entrepreneur and sports lover.
 baseurl: /
 #baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://razvancreanga.com" # the base hostname & protocol for your site, e.g. http://example.com
@@ -22,13 +22,11 @@ plugins:
 #  - jekyll-feed
 remote_theme: ngzhio/jekyll-theme-hamilton
 
-twitter:
-  username: rcreanga
-  card: summary
+#twitter:
+#  username: rcreanga
+#  card: summary
 
 social:
   name: Razvan Creanga
   links:
-    - https://twitter.com/rcreanga
-    - https://linkedin.com/in/rcreanga
-    - https://www.facebook.com/razcreanga
+    - https://x.com/rcreanga
