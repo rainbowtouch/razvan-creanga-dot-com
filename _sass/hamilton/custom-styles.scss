@@ -100,3 +100,9 @@ a.contact-info:hover,
 a.social-icon:hover {
   color: #003be4 !important;
 }
+
+@media screen and (min-width: 1px) {
+  .site-sidebar {
+      display: block !important;
+  }
+}
