@@ -1,0 +1,114 @@
+a.author-link {
+  color: #111;
+}
+
+a.author-link:visited {
+  color: #111;
+}
+
+a.author-link:hover {
+  text-decoration: none;
+}
+
+a.all-posts,
+a.post-next,
+a.post-previous {
+  color: #111;
+}
+
+a.all-posts:visited,
+a.post-next:visited,
+a.post-previous:visited {
+  color: #111;
+}
+
+.post-previous {
+  margin-right: 50px;
+}
+
+.site-nav .current-page {
+  text-decoration: underline;
+}
+
+.post-list a {
+  color: #111;
+}
+
+.post-list a:visited {
+  color: #111;
+}
+
+.share-buttons {
+  margin-bottom: 30px;
+}
+
+.site-footer {
+  margin-top: 0px;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    @extend %headings !optional;
+}
+
+.experience > %headings {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.new-section {
+  margin-top: 20px !important;
+  margin-bottom: 10px !important;
+  font-size: 1.2rem !important;
+}
+
+.first-heading {
+  margin-top: 40px !important;
+}
+
+.dates {
+  color: #b0b0b0;
+  margin-left: 5px !important;
+}
+
+.job-title { 
+  font-size: 0.9rem !important;
+  margin-top: 5px !important;
+  margin-left: 5px !important;
+}
+
+.job-description {
+  margin-left: 5px !important;
+}
+
+.indented {
+  margin-left: 10px;
+}
+
+.experience-spacer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: .2px solid #CCCCCC;
+}
+
+a.contact-info,
+a.social-icon {
+  color: #000000 !important;
+}
+
+a.contact-info:hover,
+a.social-icon:hover {
+  color: #003be4 !important;
+}
+
+@media screen and (min-width: 1px) {
+  .site-sidebar {
+      display: block !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .site-body {
+    overflow: unset;
+  }
+}

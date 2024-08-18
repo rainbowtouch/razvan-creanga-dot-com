@@ -1,0 +1,64 @@
+{% if site.avatar -%}
+<div class="sidebar-section">
+  {%- if site.avatar contains "://" -%} {%- assign avatar = site.avatar -%} {%-
+  else -%} {%- assign avatar = site.avatar | relative_url -%} {%- endif -%}
+  <a href="{{ '/' | relative_url }}"
+    ><img
+      src="{{ avatar }}"
+      class="author-avatar u-photo align-center"
+      alt="{{ site.author }}"
+  /></a>
+</div>
+{%- endif %}
+
+<div class="sidebar-section">
+  <ul class="contact-list">
+    {% if site.author -%}
+    <li>
+      <!-- <i class="sidebar-icon fas fa-at"></i>
+        <a href="{{ '/' | relative_url }}" class="author-link">
+        <span class="contact-info p-name">{{ site.author | escape }}</span>
+      </a> -->
+      <a class="author-link" style="white-space: normal;">
+        <span class="contact-info p-name">Founder &amp; CEO at Stealth Startup</span>
+      </a>
+    </li>
+    {%- endif %} {% if site.email -%}
+    <li>
+      <i class="sidebar-icon fas fa-envelope"></i>
+      <a class="contact-info u-email" href="mailto:{{ site.email }}"
+        >{{ site.email }}</a
+      >
+    </li>
+    {%- endif %}
+  </ul>
+</div>
+
+<!-- <div class="sidebar-section feed-subscribe">
+  <a href="{{ 'feed.xml' | relative_url }}">
+    <i class="sidebar-icon fas fa-rss"></i><span>Subscribe</span>
+  </a>
+</div> -->
+
+{% if site.data.social -%}
+<div class="sidebar-section">
+  <ul class="social-icons">
+    <li>      
+      <a class="contact-info u-email" target="_blank" href="https://us19.list-manage.com/contact-form?u=976ad6656a1db76be623b20fd&form_id=174ee68c3e8e6b07efc2387c03724340">
+        <i class="fas fa-envelope fa-2x" title="Email"></i>
+        </a>
+    </li>
+
+    {% for social in site.data.social -%}
+    <li>
+      <a class="social-icon" target="_blank" href="{{ social.url }}"
+        ><i
+          class="{{ social.icon | default: 'fas fa-link' }} fa-2x"
+          title="{{ social.title }}"
+        ></i
+      ></a>
+    </li>
+    {%- endfor %}
+  </ul>
+</div>
+{%- endif %}
