@@ -1,14 +1,18 @@
 <div class="footer-col-wrapper">
   <!-- <div class="footer-col"> -->
     <div class="copyright">
-      {% assign year_from = site.posts[-1].date | date: '%Y' %} {% assign
-      year_to = site.time | date: '%Y' %} {% if year_from == nil or year_from ==
-      year_to %} {% assign year_string = year_from %} {% else %} {% assign
-      year_string = year_from | append: '&nbsp;' | append: '-' | append:
-      '&nbsp;' | append: year_to %} {% endif %} {% if site.author %}
+      {% assign year_from = site.posts[-1].date | date: '%Y' %}
+      {% if site.author %}
       <p>
-        Copyright © {{ year_string }} {{ site.author }}. All rights reserved.
+        Copyright © <span id="copyright-year">{{ year_from }}</span> {{ site.author }}. All rights reserved.
       </p>
+      <script>
+        // Update the year dynamically with JavaScript
+        document.getElementById('copyright-year').innerHTML = 
+          '{{ year_from }}' === new Date().getFullYear().toString() 
+            ? new Date().getFullYear() 
+            : '{{ year_from }}' + '&nbsp;-&nbsp;' + new Date().getFullYear();
+      </script>
       {% endif %}
     </div>
   <!-- </div> -->
